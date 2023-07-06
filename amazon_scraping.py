@@ -168,7 +168,6 @@ def get_data(page_no: int, more_info: bool = True) -> pd.DataFrame:
                     response
                 )  # Add the response dictionary to the list of responses
         except Exception as e:
-            print(e)
             continue  # If there's an exception, skip to the next iteration
 
     driver.quit()
